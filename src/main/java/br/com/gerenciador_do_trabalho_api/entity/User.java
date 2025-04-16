@@ -55,8 +55,7 @@ public class User {
     /**
      * Autoridade do usuário no sistema
      */
-    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private Authority authority;
+    private Authority authority = Authority.USER;
 
 }

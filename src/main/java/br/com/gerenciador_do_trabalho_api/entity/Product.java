@@ -31,7 +31,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "produto_id")
-    private Long id;
+    private Long ID;
 
     @Column
     private String name;
@@ -43,14 +43,14 @@ public class Product {
      * Fabricação do produto
      */
     @Column
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date manufacturing;
 
     /**
      * Validade do produto
      */
     @Column
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date validity;
 
     /**
